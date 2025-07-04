@@ -1,0 +1,526 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="tr">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Anonim Sohbet Hatt\uc0\u305  - 7/24 Dertle\u351 me Servisi</title>\
+    <style>\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+\
+        body \{\
+            font-family: 'Arial', sans-serif;\
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\
+            min-height: 100vh;\
+            color: #333;\
+            overflow-x: hidden;\
+        \}\
+\
+        .container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            padding: 0 20px;\
+        \}\
+\
+        header \{\
+            background: rgba(255, 255, 255, 0.1);\
+            backdrop-filter: blur(10px);\
+            padding: 20px 0;\
+            position: sticky;\
+            top: 0;\
+            z-index: 100;\
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);\
+        \}\
+\
+        .header-content \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+\
+        .logo \{\
+            font-size: 28px;\
+            font-weight: bold;\
+            color: white;\
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);\
+        \}\
+\
+        .header-phone \{\
+            background: rgba(255, 255, 255, 0.2);\
+            padding: 10px 20px;\
+            border-radius: 25px;\
+            color: white;\
+            text-decoration: none;\
+            font-weight: bold;\
+            transition: all 0.3s ease;\
+            border: 2px solid rgba(255, 255, 255, 0.3);\
+        \}\
+\
+        .header-phone:hover \{\
+            background: rgba(255, 255, 255, 0.3);\
+            transform: translateY(-2px);\
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);\
+        \}\
+\
+        .hero \{\
+            padding: 80px 0;\
+            text-align: center;\
+            color: white;\
+        \}\
+\
+        .hero h1 \{\
+            font-size: 48px;\
+            margin-bottom: 20px;\
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);\
+            animation: fadeInUp 1s ease-out;\
+        \}\
+\
+        .hero p \{\
+            font-size: 20px;\
+            margin-bottom: 40px;\
+            opacity: 0.9;\
+            animation: fadeInUp 1s ease-out 0.2s both;\
+        \}\
+\
+        .phone-section \{\
+            background: rgba(255, 255, 255, 0.15);\
+            backdrop-filter: blur(15px);\
+            border-radius: 20px;\
+            padding: 50px;\
+            margin: 40px 0;\
+            text-align: center;\
+            border: 1px solid rgba(255, 255, 255, 0.2);\
+            animation: fadeInUp 1s ease-out 0.4s both;\
+        \}\
+\
+        .phone-number \{\
+            font-size: 42px;\
+            font-weight: bold;\
+            color: #fff;\
+            margin-bottom: 20px;\
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);\
+            letter-spacing: 2px;\
+        \}\
+\
+        .call-button \{\
+            display: inline-block;\
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);\
+            color: white;\
+            padding: 20px 50px;\
+            font-size: 24px;\
+            font-weight: bold;\
+            text-decoration: none;\
+            border-radius: 50px;\
+            transition: all 0.3s ease;\
+            box-shadow: 0 10px 30px rgba(238, 90, 36, 0.3);\
+            animation: pulse 2s infinite;\
+        \}\
+\
+        .call-button:hover \{\
+            transform: translateY(-5px);\
+            box-shadow: 0 15px 40px rgba(238, 90, 36, 0.5);\
+        \}\
+\
+        .features \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\
+            gap: 30px;\
+            margin: 60px 0;\
+        \}\
+\
+        .feature-card \{\
+            background: rgba(255, 255, 255, 0.1);\
+            backdrop-filter: blur(10px);\
+            padding: 30px;\
+            border-radius: 15px;\
+            text-align: center;\
+            color: white;\
+            transition: all 0.3s ease;\
+            border: 1px solid rgba(255, 255, 255, 0.2);\
+        \}\
+\
+        .feature-card:hover \{\
+            transform: translateY(-10px);\
+            background: rgba(255, 255, 255, 0.2);\
+        \}\
+\
+        .feature-icon \{\
+            font-size: 48px;\
+            margin-bottom: 20px;\
+        \}\
+\
+        .feature-card h3 \{\
+            font-size: 24px;\
+            margin-bottom: 15px;\
+        \}\
+\
+        .feature-card p \{\
+            font-size: 16px;\
+            opacity: 0.9;\
+            line-height: 1.6;\
+        \}\
+\
+        .testimonials \{\
+            background: rgba(255, 255, 255, 0.1);\
+            backdrop-filter: blur(10px);\
+            padding: 50px;\
+            border-radius: 20px;\
+            margin: 60px 0;\
+            border: 1px solid rgba(255, 255, 255, 0.2);\
+        \}\
+\
+        .testimonial \{\
+            text-align: center;\
+            color: white;\
+            margin-bottom: 30px;\
+        \}\
+\
+        .testimonial blockquote \{\
+            font-size: 18px;\
+            font-style: italic;\
+            margin-bottom: 15px;\
+            opacity: 0.9;\
+        \}\
+\
+        .testimonial cite \{\
+            font-weight: bold;\
+            color: #ffd700;\
+        \}\
+\
+        .footer \{\
+            background: rgba(0, 0, 0, 0.3);\
+            padding: 40px 0;\
+            text-align: center;\
+            color: white;\
+            margin-top: 60px;\
+        \}\
+\
+        .footer-content \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\
+            gap: 30px;\
+            margin-bottom: 30px;\
+        \}\
+\
+        .footer-section h3 \{\
+            margin-bottom: 15px;\
+            color: #ffd700;\
+        \}\
+\
+        .footer-section p \{\
+            opacity: 0.8;\
+            line-height: 1.6;\
+        \}\
+\
+        @keyframes fadeInUp \{\
+            from \{\
+                opacity: 0;\
+                transform: translateY(30px);\
+            \}\
+            to \{\
+                opacity: 1;\
+                transform: translateY(0);\
+            \}\
+        \}\
+\
+        @keyframes pulse \{\
+            0% \{\
+                transform: scale(1);\
+            \}\
+            50% \{\
+                transform: scale(1.05);\
+            \}\
+            100% \{\
+                transform: scale(1);\
+            \}\
+        \}\
+\
+        .floating-elements \{\
+            position: fixed;\
+            top: 0;\
+            left: 0;\
+            width: 100%;\
+            height: 100%;\
+            pointer-events: none;\
+            z-index: -1;\
+        \}\
+\
+        .floating-elements span \{\
+            position: absolute;\
+            display: block;\
+            width: 20px;\
+            height: 20px;\
+            background: rgba(255, 255, 255, 0.1);\
+            animation: float 15s infinite linear;\
+            border-radius: 50%;\
+        \}\
+\
+        .floating-elements span:nth-child(1) \{\
+            left: 10%;\
+            animation-delay: 0s;\
+        \}\
+\
+        .floating-elements span:nth-child(2) \{\
+            left: 20%;\
+            animation-delay: 2s;\
+        \}\
+\
+        .floating-elements span:nth-child(3) \{\
+            left: 30%;\
+            animation-delay: 4s;\
+        \}\
+\
+        .floating-elements span:nth-child(4) \{\
+            left: 40%;\
+            animation-delay: 6s;\
+        \}\
+\
+        .floating-elements span:nth-child(5) \{\
+            left: 50%;\
+            animation-delay: 8s;\
+        \}\
+\
+        .floating-elements span:nth-child(6) \{\
+            left: 60%;\
+            animation-delay: 10s;\
+        \}\
+\
+        .floating-elements span:nth-child(7) \{\
+            left: 70%;\
+            animation-delay: 12s;\
+        \}\
+\
+        .floating-elements span:nth-child(8) \{\
+            left: 80%;\
+            animation-delay: 14s;\
+        \}\
+\
+        @keyframes float \{\
+            0% \{\
+                transform: translateY(100vh) rotate(0deg);\
+                opacity: 0;\
+            \}\
+            10% \{\
+                opacity: 1;\
+            \}\
+            90% \{\
+                opacity: 1;\
+            \}\
+            100% \{\
+                transform: translateY(-100vh) rotate(360deg);\
+                opacity: 0;\
+            \}\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .hero h1 \{\
+                font-size: 36px;\
+            \}\
+            \
+            .hero p \{\
+                font-size: 18px;\
+            \}\
+            \
+            .phone-number \{\
+                font-size: 32px;\
+            \}\
+            \
+            .call-button \{\
+                padding: 15px 30px;\
+                font-size: 20px;\
+            \}\
+            \
+            .phone-section \{\
+                padding: 30px 20px;\
+            \}\
+            \
+            .header-content \{\
+                flex-direction: column;\
+                gap: 15px;\
+            \}\
+            \
+            .logo \{\
+                font-size: 24px;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <div class="floating-elements">\
+        <span></span>\
+        <span></span>\
+        <span></span>\
+        <span></span>\
+        <span></span>\
+        <span></span>\
+        <span></span>\
+        <span></span>\
+    </div>\
+\
+    <header>\
+        <div class="container">\
+            <div class="header-content">\
+                <div class="logo">\uc0\u55357 \u56803 \u65039  Anonim Sohbet</div>\
+                <a href="tel:003185800213" class="header-phone">\uc0\u55357 \u56542  Hemen Ara</a>\
+            </div>\
+        </div>\
+    </header>\
+\
+    <main>\
+        <section class="hero">\
+            <div class="container">\
+                <h1>Dertlerinizi Payla\uc0\u351 \u305 n</h1>\
+                <p>Anonim ve g\'fcvenli ortamda, 7/24 size dinleyecek birini bulun</p>\
+            </div>\
+        </section>\
+\
+        <section class="phone-section">\
+            <div class="container">\
+                <div class="phone-number">003185800213</div>\
+                <p style="color: white; margin-bottom: 30px; font-size: 18px;">\
+                    Telefonunuzdan yukar\uc0\u305 daki numaray\u305  tu\u351 lay\u305 n ve hemen sohbete ba\u351 lay\u305 n\
+                </p>\
+                <a href="tel:003185800213" class="call-button">\uc0\u55357 \u56803 \u65039  Hemen Ara</a>\
+            </div>\
+        </section>\
+\
+        <section class="features">\
+            <div class="container">\
+                <div class="feature-card">\
+                    <div class="feature-icon">\uc0\u55357 \u56594 </div>\
+                    <h3>Tamamen Anonim</h3>\
+                    <p>Kimli\uc0\u287 iniz gizli kal\u305 r. Hi\'e7bir ki\u351 isel bilginiz kaydedilmez veya payla\u351 \u305 lmaz.</p>\
+                </div>\
+                <div class="feature-card">\
+                    <div class="feature-icon">\uc0\u55357 \u56492 </div>\
+                    <h3>Yarg\uc0\u305 s\u305 z Dertle\u351 me</h3>\
+                    <p>Dertlerinizi, endi\uc0\u351 elerinizi ve d\'fc\u351 \'fcncelerinizi \'f6zg\'fcrce payla\u351 \u305 n.</p>\
+                </div>\
+                <div class="feature-card">\
+                    <div class="feature-icon">\uc0\u55357 \u56656 </div>\
+                    <h3>7/24 Hizmet</h3>\
+                    <p>Gece g\'fcnd\'fcz demeden, ihtiya\'e7 duydu\uc0\u287 unuz her an yan\u305 n\u305 zday\u305 z.</p>\
+                </div>\
+                <div class="feature-card">\
+                    <div class="feature-icon">\uc0\u10084 \u65039 </div>\
+                    <h3>Duygusal Destek</h3>\
+                    <p>Profesyonel ve samimi yakla\uc0\u351 \u305 mla, kendinizi daha iyi hissetmenize yard\u305 mc\u305  oluruz.</p>\
+                </div>\
+                <div class="feature-card">\
+                    <div class="feature-icon">\uc0\u55358 \u56605 </div>\
+                    <h3>G\'fcvenli Ortam</h3>\
+                    <p>KVKK uyumlu hizmetimizle verileriniz g\'fcvende kal\uc0\u305 r.</p>\
+                </div>\
+                <div class="feature-card">\
+                    <div class="feature-icon">\uc0\u55356 \u57263 </div>\
+                    <h3>An\uc0\u305 nda Eri\u351 im</h3>\
+                    <p>Karma\uc0\u351 \u305 k kay\u305 t i\u351 lemleri yok. Sadece aray\u305 n ve konu\u351 maya ba\u351 lay\u305 n.</p>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <section class="testimonials">\
+            <div class="container">\
+                <div class="testimonial">\
+                    <blockquote>"Zor bir d\'f6nemde kendimi \'e7ok yaln\uc0\u305 z hissediyordum. Bu hizmeti kulland\u305 ktan sonra kendimi \'e7ok daha iyi hissettim."</blockquote>\
+                    <cite>- Anonim Kullan\uc0\u305 c\u305 </cite>\
+                </div>\
+                <div class="testimonial">\
+                    <blockquote>"Yarg\uc0\u305 lanmadan dertlerimi anlatabilmek \'e7ok rahatlat\u305 c\u305 yd\u305 . Herkese tavsiye ederim."</blockquote>\
+                    <cite>- Anonim Kullan\uc0\u305 c\u305 </cite>\
+                </div>\
+                <div class="testimonial">\
+                    <blockquote>"24 saat eri\uc0\u351 ilebilir olmas\u305  \'e7ok \'f6nemli. Gece saatlerinde bile birisiyle konu\u351 abilmek harika."</blockquote>\
+                    <cite>- Anonim Kullan\uc0\u305 c\u305 </cite>\
+                </div>\
+            </div>\
+        </section>\
+    </main>\
+\
+    <footer class="footer">\
+        <div class="container">\
+            <div class="footer-content">\
+                <div class="footer-section">\
+                    <h3>Hakk\uc0\u305 m\u305 zda</h3>\
+                    <p>Anonim sohbet hizmetimiz, insanlar\uc0\u305 n dertlerini payla\u351 abilece\u287 i g\'fcvenli bir ortam sunmak i\'e7in tasarlanm\u305 \u351 t\u305 r. Profesyonel ve samimi yakla\u351 \u305 m\u305 m\u305 zla yan\u305 n\u305 zday\u305 z.</p>\
+                </div>\
+                <div class="footer-section">\
+                    <h3>Gizlilik</h3>\
+                    <p>T\'fcm g\'f6r\'fc\uc0\u351 meler tamamen gizlidir. Hi\'e7bir kay\u305 t yap\u305 lmaz, ki\u351 isel bilgileriniz saklanmaz. KVKK uyumlu hizmet veriyoruz.</p>\
+                </div>\
+                <div class="footer-section">\
+                    <h3>\uc0\u304 leti\u351 im</h3>\
+                    <p>Dertle\uc0\u351 me ve duygusal destek i\'e7in:<br>\
+                    <strong style="color: #ffd700; font-size: 20px;">003185800213</strong><br>\
+                    7/24 Hizmet</p>\
+                </div>\
+            </div>\
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px; opacity: 0.8;">\
+                <p>&copy; 2025 Anonim Sohbet Hatt\uc0\u305 . T\'fcm haklar\u305  sakl\u305 d\u305 r.</p>\
+            </div>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        // Smooth scrolling for anchor links\
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => \{\
+            anchor.addEventListener('click', function (e) \{\
+                e.preventDefault();\
+                document.querySelector(this.getAttribute('href')).scrollIntoView(\{\
+                    behavior: 'smooth'\
+                \});\
+            \});\
+        \});\
+\
+        // Add click tracking for phone buttons\
+        document.querySelectorAll('a[href^="tel:"]').forEach(button => \{\
+            button.addEventListener('click', function() \{\
+                console.log('Phone call initiated to: 003185800213');\
+            \});\
+        \});\
+\
+        // Dynamic background effect\
+        function createFloatingElement() \{\
+            const element = document.createElement('div');\
+            element.style.position = 'fixed';\
+            element.style.width = Math.random() * 6 + 4 + 'px';\
+            element.style.height = element.style.width;\
+            element.style.backgroundColor = 'rgba(255,255,255,0.1)';\
+            element.style.borderRadius = '50%';\
+            element.style.left = Math.random() * 100 + '%';\
+            element.style.top = '100vh';\
+            element.style.pointerEvents = 'none';\
+            element.style.zIndex = '-1';\
+            \
+            document.body.appendChild(element);\
+            \
+            const duration = Math.random() * 10000 + 10000;\
+            const animation = element.animate([\
+                \{ transform: 'translateY(0px)', opacity: 0 \},\
+                \{ transform: 'translateY(-100vh)', opacity: 1 \},\
+                \{ transform: 'translateY(-200vh)', opacity: 0 \}\
+            ], \{\
+                duration: duration,\
+                easing: 'linear'\
+            \});\
+            \
+            animation.addEventListener('finish', () => \{\
+                document.body.removeChild(element);\
+            \});\
+        \}\
+\
+        // Create floating elements periodically\
+        setInterval(createFloatingElement, 2000);\
+    </script>\
+</body>\
+</html>}
